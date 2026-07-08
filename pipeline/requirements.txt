@@ -1,0 +1,14 @@
+# Core
+torch>=2.2
+numpy>=1.26
+einops>=0.7
+
+# Analysis + plotting for report.md
+matplotlib>=3.8
+scipy>=1.12
+
+# Contract validation
+jsonschema>=4.21
+
+# Nice to have for the mainline training loop / progress
+tqdm>=4.66

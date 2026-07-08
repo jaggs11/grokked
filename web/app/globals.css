@@ -1,0 +1,22 @@
+/* Design tokens — see docs/BLUEPRINT.md §1.3. Do not repalette without updating the blueprint. */
+:root {
+  --paper:  #ECEEE9;   /* page background */
+  --ink:    #1A1F2A;   /* prose, axes on paper */
+  --scope:  #0C1220;   /* the instrument (dark viewport) */
+  --train:  #F0B24A;   /* training-set traces (amber) */
+  --val:    #5FE3C0;   /* validation traces (phosphor) */
+  --signal: #B48CFF;   /* key frequencies / the circuit (violet) */
+  --noise:  #5A6478;   /* non-key freqs / memorization residue (slate) */
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); }
+
+/* Fonts wired via next/font in layout.tsx: Spectral (display/prose),
+   IBM Plex Mono (data/odometer), Archivo (UI labels). */
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

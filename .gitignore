@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+pipeline/checkpoints/
+*.pt
+
+# Node / Next
+web/node_modules/
+web/.next/
+web/out/
+.DS_Store
